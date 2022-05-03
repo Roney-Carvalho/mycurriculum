@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: mediumspringgreen;
+    background-repeat: no-repeat;
+}
+
+.name h1 {
+    margin-bottom: 20px;
+}
+
+.name h5 {
+    margin: 10px;
+}
+
+header {
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: darkslategrey;
+    align-items: center;
+    padding: 8px 120px 8px 40px;
+    box-shadow: 1px 1px 10px 1px white;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    padding: 5px 20px;
+    border-right: 1px solid gray;
+}
+
+header ul li:last-child {
+    border-right: none;
+}
+
+header img {
+    max-width: 60px;
+    transition: 300ms;
+}
+
+header ul li img {
+    max-width: 40px;
+}
+
+header ul li img:hover {
+    max-width: 47px;
+    opacity: 1.5;
+    box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        border-radius: 20%;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 45px;
+    cursor: pointer;
+    animation: blink 1.8s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.activate {
+    display: block !important;
+}
+
+.myexperiences {
+    margin: 60px 0px 15px 0px;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.squares {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.square-1, .square-2, .square-3 {
+    background-color: azure;
+    margin: 15px;
+    border-radius: 4%;
+    transition: 300ms;
+}
+
+.animation:hover {
+    background-color: lightgoldenrodyellow;
+    transform: scale3d(2);
+    box-shadow:
+                5px 5px #53a7ea,
+                6px 6px #53a7ea,
+                7px 7px #53a7ea;
+        border-radius: 5%;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.squares img {
+    max-width: 220px;
+    padding: 30px;
+    transition: 300ms;
+}
+
+.squares p {
+    padding: 20px;
+    font-weight: 700;
+    color: mediumseagreen;
+    transition: 400ms;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: darkslategray;
+    font-weight: 600;
+}
+
+.form {
+    width: 40%;
+    margin: 20px auto;
+    border-top: 1px solid lightslategrey;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.form input {
+    width: 50%;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    color: black;
+    padding: 5px 10px;
+    background: linear-gradient(to right #53a7ea 50%, blueviolet 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -2.7px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: azure;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: darkslategrey;
+}
+
+footer ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+footer ul li {
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    padding: 12px;
+}

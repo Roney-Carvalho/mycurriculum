@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8b7e108f69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Roney</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo.png" alt="logo Roney">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/roney-carvalho-a4031b77/"><img src="./images/linkedin.png" alt="linkedin icone"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/Roney-Carvalho"><img src="./images/github.png" alt="github icone"></a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:roneymcc@hotmail.com"><img src="./images/email.png" alt="email icone"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/41995869337"><img src="./images/whatsapp.png" alt="whatsapp icone"></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Roney</h1>
+                <h5>Software Engineer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angles-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia accusantium quis aspernatur veritatis hic dolores, magni non perspiciatis cum cumque ipsa obcaecati qui sit illo? Voluptatum numquam ipsum asperiores assumenda.
+                </p>
+            </div>
+
+            <section class="myexperiences">My experiences</section>
+            <div class="squares">
+                <div class="animation square-1">
+                    <div>
+                        <img src="./images/language.png" alt="icone linguagem">
+                    </div>
+                    <div>
+                        <p>English & Teaching</p>
+                    </div>
+                </div>
+                <div class="animation square-2">
+                    <div>
+                        <img src="./images/business.png" alt="icone indicadores">
+                    </div>
+                    <div>
+                        <p>KPIs & Business</p>
+                    </div>
+                </div>
+                <div class="animation square-3">
+                    <div>
+                        <img src="./images/programming.png" alt="icone programação">
+                    </div>
+                    <div>
+                        <p>IT & Programming</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button>enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li>"As ideias estão no chão, você tropeça e acha a solução"</li>
+                <li>Agradecimentos</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('activate');
+        }
+    </script>
+</body>
+</html>
